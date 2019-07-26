@@ -1,0 +1,136 @@
+2019-07-18 15:13:24 - root - ERROR - rpa_batch_delete: Traceback (most recent call last):
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\rpa_batch_delete.py", line 99, in input_info
+    driver.switch_to_alert().accept()
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 803, in switch_to_alert
+    return self._switch_to.alert
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 55, in alert
+    alert.text
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\common\alert.py", line 69, in text
+    return self.driver.execute(Command.GET_ALERT_TEXT)["value"]
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\delayed.py", line 23, in inner
+    err_user = fun(driver, file_name, *args)
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\rpa_batch_delete.py", line 128, in input_info
+    raise NoData("提交时没数据")
+sz_rpa1.sz_rpa_batch_delete.MyException.NoData: 提交时没数据
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\rpa_batch_delete.py", line 51, in main_func
+    input_info(driver, file_path, data_list)
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\delayed.py", line 27, in inner
+    err_user = fun(driver, file_name, *args)
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\rpa_batch_delete.py", line 82, in input_info
+    cbgl.click()
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <li name="wsfw" class="wsfw-left-l1 wsfw-current" id="returnYwsb('F02000')">...</li> is not clickable at point (114, 167). Other element would receive the click: <iframe scrolling="no" frameborder="0" class="dw_lanePrompt_maskIframe"></iframe>
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\rpa_batch_delete.py", line 99, in input_info
+    driver.switch_to_alert().accept()
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 803, in switch_to_alert
+    return self._switch_to.alert
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 55, in alert
+    alert.text
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\common\alert.py", line 69, in text
+    return self.driver.execute(Command.GET_ALERT_TEXT)["value"]
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\delayed.py", line 23, in inner
+    err_user = fun(driver, file_name, *args)
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\rpa_batch_delete.py", line 128, in input_info
+    raise NoData("提交时没数据")
+sz_rpa1.sz_rpa_batch_delete.MyException.NoData: 提交时没数据
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\rpa_batch_delete.py", line 63, in main_func
+    input_info(driver, file_path, data_list)
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\delayed.py", line 27, in inner
+    err_user = fun(driver, file_name, *args)
+  File "D:\project\sz_rpa1\sz_rpa_batch_delete\rpa_batch_delete.py", line 82, in input_info
+    cbgl.click()
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <li name="wsfw" class="wsfw-left-l1 wsfw-current" id="returnYwsb('F02000')">...</li> is not clickable at point (114, 167). Other element would receive the click: <div class="dw-beacon-wnd-header-title-ext">...</div>
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+
+2019-07-18 15:19:07 - root - ERROR - batch_add: Traceback (most recent call last):
+  File "D:\project\sz_rpa1\sz_rpa_batch_add\batch_add.py", line 299, in click_upload_file
+    driver.switch_to_alert().accept()
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 803, in switch_to_alert
+    return self._switch_to.alert
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 55, in alert
+    alert.text
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\common\alert.py", line 69, in text
+    return self.driver.execute(Command.GET_ALERT_TEXT)["value"]
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+
+2019-07-18 15:31:45 - root - ERROR - batch_add: Traceback (most recent call last):
+  File "D:\project\sz_rpa1\sz_rpa_batch_add\batch_add.py", line 299, in click_upload_file
+    driver.switch_to_alert().accept()
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 803, in switch_to_alert
+    return self._switch_to.alert
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 55, in alert
+    alert.text
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\common\alert.py", line 69, in text
+    return self.driver.execute(Command.GET_ALERT_TEXT)["value"]
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\project\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=74.0.3729.169)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
+
+
