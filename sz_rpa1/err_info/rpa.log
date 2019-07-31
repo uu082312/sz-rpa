@@ -134,3 +134,13 @@ selenium.common.exceptions.NoAlertPresentException: Message: no such alert
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
 
 
+2019-07-31 09:19:53 - root - ERROR - log: Traceback (most recent call last):
+  File "D:\project\sz_rpa1\rpa_add_new_user\log.py", line 57, in get_driver_log
+    raise YzmErr("验证码有误")
+sz_rpa1.sz_rpa_batch_add.MyException.YzmErr: 验证码有误
+
+2019-07-31 09:32:50 - root - ERROR - log: Traceback (most recent call last):
+  File "D:\project\sz_rpa1\rpa_add_new_user\log.py", line 57, in get_driver_log
+    raise YzmErr("验证码有误")
+sz_rpa1.sz_rpa_batch_add.MyException.YzmErr: 验证码有误
+

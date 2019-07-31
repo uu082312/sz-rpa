@@ -20,7 +20,7 @@ def add_user():
     url = 'https://sipub.sz.gov.cn/hsoms/logonDialog.jsp'
     driver = get_driver_log(url)
     # 关闭弹窗
-    time.sleep(100000)
+    # time.sleep(100000)
     close_window(driver)
     sql = "select * from shenzhen_add where status=0 limit %d, %d" % (0, 4)
     # 拿到的批量数据信息
@@ -45,8 +45,8 @@ def close_window(driver):
     # driver.save_screenshot('./登录跳转.png')
     # print("跳转页面截图完毕")
     try:
-        el = driver.find_elements_by_class_name("dw-res-wnd-header-closebtn-ext")[1]
-        el.click()
+        # el = driver.find_elements_by_class_name("dw-res-wnd-header-closebtn-ext")[1]
+        # el.click()
         time.sleep(0.5)
         el = driver.find_element_by_class_name("dw-res-wnd-header-closebtn-ext")
         el.click()
@@ -54,9 +54,9 @@ def close_window(driver):
         # print('关闭窗口NoSuchElementException异常, 重新刷新')
         driver.refresh()
         time.sleep(3)
-        el = driver.find_elements_by_class_name("dw-res-wnd-header-closebtn-ext")[1]
-        el.click()
-        time.sleep(3)
+        # el = driver.find_elements_by_class_name("dw-res-wnd-header-closebtn-ext")[1]
+        # el.click()
+        # time.sleep(3)
         el = driver.find_element_by_class_name("dw-res-wnd-header-closebtn-ext")
         el.click()
     except:
